@@ -23,5 +23,8 @@
     <ClInclude Include="%28C++ 입출력%29 2022.10.13.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="(생성자와 소멸자) 2022.10.14.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

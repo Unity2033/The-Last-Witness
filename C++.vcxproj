@@ -143,6 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="%28C++ 입출력%29 2022.10.13.h" />
+    <ClInclude Include="(생성자와 소멸자) 2022.10.14.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
