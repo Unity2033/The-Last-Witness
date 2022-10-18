@@ -14,9 +14,6 @@ public :
 	// this 포인터란?
 	// 객체 자신을 가리키는 포인터입니다.
 
-	Monster();
-
-
 	void Attack(int power); // 함수 선언
 };
 
