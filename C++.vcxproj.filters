@@ -18,12 +18,21 @@
     <ClCompile Include="C++.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="%28C++ 입출력%29 2022.10.13.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="(생성자와 소멸자) 2022.10.14.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="(이름 공간) 2022.10.17.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
