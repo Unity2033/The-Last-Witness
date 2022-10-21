@@ -1,120 +1,148 @@
 #include <iostream>
+using namespace std;
 
-using namespace std; 
-
-// 깊은 복사
-// 참조값이 아닌 인스턴스를 새로 복사하여 실제값을 복사하는 방법입니다.
+// 가상 함수
 /*
-class Object
+class Animal 
 {
-// 속성
-private :
-    // m(멤버)_변수이름
-    int m_position;
-    float m_size;
-    int * m_memory;
+private : // 속성
+
+	float weight; 
+
 public :
-   // 생성자는 public으로 해주셔야 합니다.
-    Object(int postion, float size)
-    {
-        m_position = postion;
-        m_size = size;
+	// 가상 함수란?
+	// 상속하는 클래스 내에 같은 함수로 재정의될 수 있는 함수입니다.
 
-        m_memory = new int(10);
+	// 가상 함수 규칙
+	// -> 가상 함수는 public으로 선언되어야 합니다.
 
-        cout << "memory 값 : " << *m_memory << endl;
-        cout << "position 값 : " << m_position << endl;
-        cout << "size 값 : " << m_size << endl;
-    }
+	// -> 가상 함수는 static(정적)으로 선언될 수 없습니다.
 
-    // 복사 생성자
-    // 같은 클래스의 객체로부터 '복사'해서 새로운 객체를
-    // 생성하는 생성자입니다.
+	// -> 가상 함수는 실행 시간에 다형성을 형성하기 위해
+	//    기본 클래스의 포인터 또는 참조를 통해 접근해야 합니다.
+ 
+	// -> 가상 함수는 상위 클래스와 하위 클래스의 함수의 형태가
+	//    동일해야 합니다.
 
-    // 복사 생성자에 인수로 &(레퍼런스)를 받는 이유
-    // 새로운 객체를 생성할 때 생기는 오버헤드 현상을 
-    // 방지하기 위해 선언합니다.
+	virtual void Sound() // <- 가상 함수 선언 
+	{
+		cout << "동물의 소리" << endl;
+	}
 
-    // const 복사된 데이터를 보호하기 위해 상수화를 합니다.
-    Object(const Object & copyObject)
-    {
-        m_memory = new int(*copyObject.m_memory);
-        m_position = copyObject.m_position;
-        m_size = copyObject.m_size;
+	void Attack()
+	{
+		cout << "공격" << endl;
+	}
+};
 
-        cout << "memory 값 : " << *m_memory << endl;
-        cout << "position 값 : " << m_position << endl;
-        cout << "size 값 : " << m_size << endl;
-    }
+class Cat : public Animal
+{
+public:
+	// 상위 클래스에 있는 Sound() 함수를 사용하기 위해서는
+	// 같은 이름으로 정의해주어야 합니다.
+	void Sound()
+	{
+		cout << "냐~옹~" << endl;
+	}
 
-    // 객체가 소멸될 때 동적으로 할당한 메모리 공간을
-    // 해제합니다.
-    ~Object()
-    {
-        delete m_memory;
-    }
+	void Attack()
+	{
+		cout << "핥퀴기" << endl;
+	}
+};
+
+class Dog : public Animal
+{
+public:
+	void Sound() 
+	{
+		cout << "멍~멍~" << endl;
+	}
+
+	void Attack()
+	{
+		cout << "물기" << endl;
+	}
 };
 */
 
-// 기본 생성자
-// 프로그래머가 정의한 생성자가 없는 경우
-// 컴파일러가 자동으로 생성하는 생성자입니다.
-class Book
+// 오버로딩
+// 같은 이름의 함수를 여러 개 만들 수 있는 기능입니다.
+
+// 함수의 오버로딩은 매개변수의 갯수와 매개변수의 타입(자료형)으로
+// 설정할 수 있습니다.
+void Calculator(int x)
 {
-public :
-    int page;
-    string name;
+	cout << "int 계산기(매개 변수 1개)" << endl;
+	cout << x << endl;
+}
 
-    // 기본 생성자의 경우 생성자가 하나라도 선언되어 있다면
-    // 기본 생성자가 자동으로 생성되지 않습니다.
-    // Book() {}; <- 생성자가 없는 기본 생성자를 생성합니다.
+// 함수의 오버로딩은 반환형에 영향을 받지 않습니다.
+//int Calculator(int x)
+//{
+//	return x;
+//}
 
-    Book()
-    {
-        cout << "생성자 호출" << endl;
-    }
-};
-
-class Cover : Book
+void Calculator(int x, int y) 
 {
+	cout << "int 계산기" << endl;
+	cout << x + y << endl;
+}
 
-};
+void Calculator(float x, float y)
+{
+	cout << "float 계산기" << endl;
+	cout << x + y << endl;
+}
 
 int main()
 {
-    // 얕은 복사란?
-    /*
-    // 값을 복사하는데 인스턴스가 메모리에 새로 생성되지 않는 형태입니다.
-    // 그렇기 때문에 값 자체를 복사하는 것이 아니라 주소값을 복사하여 
-    // 같은 메모리를 가리키게 하는 복사입니다.
-  
-    int * a = new int(10); // 동적으로 메모리 공간을 할당합니다.
-    int * b = new int(20);
+	// 다형성
+	/*
+	// 객체가 여러 형태를 받아들일 수 있는 성질이며,
+	// 상황에 따라 다른 의미를 부여하여 사용할 수 있는 속성입니다.
 
-    cout << "a의 값 : " << *a << endl;
-    cout << "b의 값 : " << *b << endl;
+	// 바인딩
+	// 프로그램 소스에 사용된 이름이나 식별자 그리고 함수들에 대해 
+	// 값 또는 속성을 확정하는 과정입니다.
 
-    // 얕은 복사가 발생합니다. 
-    a = b;
-    
-    *b = 100;
+	// 정적 바인딩
+	// 컴파일 시점에 이루어지는 바인딩입니다.
+	// 컴파일이 끝나면 결정된 속성들은 변경이 불가능합니다.
 
-    cout << "a의 값 : " << *a << endl;
-    cout << "b의 값 : " << *b << endl;
+	// 동적 바인딩
+	// 실행시간에 이루어지는 바인딩입니다.
+	// 실행시간에 필요한 객체의 함수를 호출할 수 있으며, 유연성을
+	// 가질 수 있습니다.
+	
+	// 일반 함수는 정적 바인딩으로 컴파일 시점에 호출할 함수가
+	// 결정됩니다.
 
-    delete a;
-    delete b;
-  
-    // 생성자에 매개변수가 있다면 클래스를 인스턴스(메모리 할당)할 때
-    // 클래스에 인수를 넣어주어야 합니다.
-    Object cat1(10,5.5);
+	// 실행 시간에 이루어져야 합니다.
 
-    Object cat2 = cat1;
-    */
+	// 가상 함수는 실행 시간에 원하는 함수를 호출할 수 있습니다.
 
-    Book book1;
-    Cover cover;
+	// 가상 함수는 컴파일 시점에 함수를 결정하지 않고 호출되는 시점에
+	// 함수를 호출합니다.
 
-    return 0;
+	Animal * animal1 = new Animal;	// new Cat <- 실행 시간에 컴파일러가 인식합니다.
+	Animal * animal2 = new Dog;	// new Dog <- 실행 시간에 컴파일러가 인식합니다.
+
+	animal1->Sound();
+	animal1->Attack();
+
+	animal1 = animal2;
+
+	animal1->Sound();
+	animal1->Attack();
+
+	animal2->Sound();
+	*/
+
+	// 함수의 오버로딩
+	Calculator(10, 20);
+
+	Calculator(10.5f, 16.7f);
+
+	return 0;
 }
-
