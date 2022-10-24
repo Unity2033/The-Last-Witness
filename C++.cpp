@@ -1,148 +1,165 @@
 #include <iostream>
 using namespace std;
 
-// 가상 함수
+// 함수의 오버라이딩이란?
 /*
-class Animal 
+// 이미 정의된 함수를 무시하고, 같은 이름의 함수를 새롭게
+// 정의하는 기능입니다.
+
+class Parent 
 {
-private : // 속성
-
-	float weight; 
-
 public :
-	// 가상 함수란?
-	// 상속하는 클래스 내에 같은 함수로 재정의될 수 있는 함수입니다.
-
-	// 가상 함수 규칙
-	// -> 가상 함수는 public으로 선언되어야 합니다.
-
-	// -> 가상 함수는 static(정적)으로 선언될 수 없습니다.
-
-	// -> 가상 함수는 실행 시간에 다형성을 형성하기 위해
-	//    기본 클래스의 포인터 또는 참조를 통해 접근해야 합니다.
- 
-	// -> 가상 함수는 상위 클래스와 하위 클래스의 함수의 형태가
-	//    동일해야 합니다.
-
-	virtual void Sound() // <- 가상 함수 선언 
+	virtual void Talk()
 	{
-		cout << "동물의 소리" << endl;
+		cout << "Parent 클래스 Talk 함수" << endl;
 	}
 
-	void Attack()
+	void Information()
 	{
-		cout << "공격" << endl;
+		cout << "Parent 클래스입니다." << endl;
 	}
 };
 
-class Cat : public Animal
+class Child : public Parent
 {
 public:
-	// 상위 클래스에 있는 Sound() 함수를 사용하기 위해서는
-	// 같은 이름으로 정의해주어야 합니다.
-	void Sound()
+	// 오버라이딩할 때 상위 클래스의 함수 이름과
+	// 동일하게 만들어주어야 합니다.
+	void Information()
 	{
-		cout << "냐~옹~" << endl;
-	}
+		cout << "Child 클래스입니다." << endl;
+    }
 
-	void Attack()
+	void Talk()
 	{
-		cout << "핥퀴기" << endl;
-	}
-};
-
-class Dog : public Animal
-{
-public:
-	void Sound() 
-	{
-		cout << "멍~멍~" << endl;
-	}
-
-	void Attack()
-	{
-		cout << "물기" << endl;
+		cout << "Child 클래스 Talk 함수" << endl;
 	}
 };
 */
 
-// 오버로딩
-// 같은 이름의 함수를 여러 개 만들 수 있는 기능입니다.
-
-// 함수의 오버로딩은 매개변수의 갯수와 매개변수의 타입(자료형)으로
-// 설정할 수 있습니다.
-void Calculator(int x)
+// 상속 관계일 때 생성자와 소멸자 호출 순서
+/*
+class Fruit 
 {
-	cout << "int 계산기(매개 변수 1개)" << endl;
-	cout << x << endl;
-}
+public :
+	Fruit()
+	{
+		cout << "Fruit 클래스 생성" << endl;
+	}
 
-// 함수의 오버로딩은 반환형에 영향을 받지 않습니다.
-//int Calculator(int x)
-//{
-//	return x;
-//}
+	~Fruit()
+	{
+		cout << "Fruit 클래스 소멸" << endl;
+	}
+};
 
-void Calculator(int x, int y) 
+class Apple : public Fruit
 {
-	cout << "int 계산기" << endl;
-	cout << x + y << endl;
-}
+public :
+	Apple()
+	{
+		cout << "Apple 클래스 생성" << endl;
+	}
 
-void Calculator(float x, float y)
+	~Apple()
+	{
+		cout << "Apple 클래스 소멸" << endl;
+	}
+};
+*/
+
+// 순수 가상 함수
+// 선언만 있고 구현이 없는 가상 함수입니다.
+class Pen
 {
-	cout << "float 계산기" << endl;
-	cout << x + y << endl;
-}
+public :
+	// 순수 가상 함수는 함수에 0을 넣어주면 됩니다.
+	// 하위 클래스에서 재정의할 것으로 예상되는 함수에 대해
+	// 미리 호출 계획을 세워 두기 위해 정의합니다.
+	virtual void Draw() = 0;
+	virtual void Color() = 0;
+};
+
+class Circle : public Pen
+{
+public:
+	// 순수 가상 함수는 무조건 하위 클래스에서 
+	// 재정의를 해야합니다.
+	void Draw()
+	{
+		cout << "동그라미" << endl;
+	}
+
+	void Color()
+	{
+		cout << "빨간색" << endl;
+	}
+};
+
+class Rectangle : public Pen
+{
+public:
+	void Draw()
+	{
+		cout << "네모" << endl;
+	}
+
+	void Color()
+	{
+		cout << "파란색" << endl;
+	}
+};
 
 int main()
 {
-	// 다형성
+	// 가상 함수 테이블
 	/*
-	// 객체가 여러 형태를 받아들일 수 있는 성질이며,
-	// 상황에 따라 다른 의미를 부여하여 사용할 수 있는 속성입니다.
-
-	// 바인딩
-	// 프로그램 소스에 사용된 이름이나 식별자 그리고 함수들에 대해 
-	// 값 또는 속성을 확정하는 과정입니다.
-
-	// 정적 바인딩
-	// 컴파일 시점에 이루어지는 바인딩입니다.
-	// 컴파일이 끝나면 결정된 속성들은 변경이 불가능합니다.
-
-	// 동적 바인딩
-	// 실행시간에 이루어지는 바인딩입니다.
-	// 실행시간에 필요한 객체의 함수를 호출할 수 있으며, 유연성을
-	// 가질 수 있습니다.
+	Parent *  parent = new Parent;
+	Child * child = new Child;
 	
-	// 일반 함수는 정적 바인딩으로 컴파일 시점에 호출할 함수가
-	// 결정됩니다.
+	parent->Talk();	// 가상 함수
+	parent->Information(); // 일반 함수
 
-	// 실행 시간에 이루어져야 합니다.
+	parent = child;
 
-	// 가상 함수는 실행 시간에 원하는 함수를 호출할 수 있습니다.
+	// parent 포인터의 참조를 child의 메모리 공간을 
+	// 가리키도록 변경하였습니다.
 
-	// 가상 함수는 컴파일 시점에 함수를 결정하지 않고 호출되는 시점에
-	// 함수를 호출합니다.
+	// 가상 함수 테이블이란?
+	// 함수 포인터 배열이며, 이 포인터를 따라가서 가상 함수로
+	// 선언된 멤버 함수들의 주소에 배열 형태로 접근하여 호출하는 테이블입니다.
 
-	Animal * animal1 = new Animal;	// new Cat <- 실행 시간에 컴파일러가 인식합니다.
-	Animal * animal2 = new Dog;	// new Dog <- 실행 시간에 컴파일러가 인식합니다.
+	// 가상 함수 테이블이 실제 호출되어야 할 함수의 위치를 저장하고 있습니다.
 
-	animal1->Sound();
-	animal1->Attack();
-
-	animal1 = animal2;
-
-	animal1->Sound();
-	animal1->Attack();
-
-	animal2->Sound();
+	parent->Talk();	// 가상 함수
+	parent->Information(); // 일반 함수
 	*/
 
-	// 함수의 오버로딩
-	Calculator(10, 20);
+	// 상속 관계일 때 생성자와 소멸자 호출 순서
+	/*
+	Apple apple;
 
-	Calculator(10.5f, 16.7f);
+	// 상속관계에서 하위 클래스는 상위 클래스의 생성자를
+	// 먼저 호출한 뒤 그 다음에 하위 클래스의 생성자를 호출합니다.
+
+	// 소멸자는 생성자의 역순으로 호출됩니다.
+	*/
+
+	// 추상 클래스
+	// 일부 함수가 구현되지 않고, 선언만 되어있는 클래스입니다. 
+	// 추상 클래스는 객체를 생성할 수 없습니다.
+
+	// 상속받은 클래스에서도 순수 가상함수들을 모두 다 재정의해야만
+	// 생성할 수 있습니다.
+
+	// 필요한 모든 클래스가 구현될 수 있도록하여 안정성을 높이는데 
+	// 큰 효과를 줍니다.
+
+	Circle circle;
+	circle.Draw();
+
+	Rectangle rectangle;
+	rectangle.Draw();
 
 	return 0;
 }
