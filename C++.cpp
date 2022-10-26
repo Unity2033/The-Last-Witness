@@ -1,122 +1,153 @@
 #include <iostream>
-#include <conio.h>
-#include <time.h>
 
 using namespace std;
 
-// 가상 소멸자
+// 다중 상속이란?
+// 어떤 클래스가 하나 이상의 상위 클래스로부터 여러 가지 행동이나 특징을
+// 상속받을 수 있는 상속입니다.
 /*
-// 가상 소멸자는 존재하지만, 가상 생성자는 존재하지 않습니다.
-class A 
+class Keyboard 
 {
 public :
-	A()
+	Keyboard()
 	{
-		cout << "A 클래스 생성" << endl;
+		cout << "keyBoard 호출" << endl;
 	}
-    virtual ~A()
+
+	void Input()
 	{
-		cout << "A 클래스 소멸" << endl;
+		cout << "키보드 입력" << endl;
 	}
+
+	int key;
+};
+
+class Mouse
+{
+public :
+	Mouse()
+	{
+		cout << "Mouse 호출" << endl;
+	}
+
+	void Input()
+	{
+		cout << "마우스 입력" << endl;
+	}
+
+	int sensor;
 
 };
 
-class B : public A
+class Computer : public Keyboard, public Mouse 
+{
+public:
+
+	Computer(int _key, int _sensor)
+	{
+		Keyboard::key = _key;
+		Mouse::sensor = _sensor;
+
+		cout << Keyboard::key << endl;
+		cout << Mouse::sensor << endl;
+	}
+};
+*/
+
+
+// 가상 상속
+/*
+class A
+{
+public:
+	A()
+	{
+		cout << "A 클래스 호출" << endl;
+	}
+};
+
+class B	: virtual public A
 {
 public:
 	B()
 	{
-		cout << "B 클래스 생성" << endl;
+		cout << "B 클래스 호출" << endl;
 	}
-	virtual ~B()
+};
+
+class C	:virtual public A
+{
+public:
+	C()
 	{
-		cout << "B 클래스 소멸" << endl;
+		cout << "C 클래스 호출" << endl;
+	}
+};
+
+class D	: public B, public C
+{
+public:
+	D()
+	{
+		cout << "D 클래스 호출" << endl;
 	}
 };
 */
 
-// 프렌드
-/*
-// 클래스의 멤버 함수는 아니지만, 클래스에 friend 라고 선언하게 되면
-// 클래스의 멤버 함수처럼 private 멤버에 접근할 수 있는 기능입니다.
-class PeopleA 
-{
-private :
-	int age;
-	// 친구로 선언할 클래스의 이름을 선언합니다.
-
-	friend void Information(PeopleA a) // <- 전역 함수로 선언
-	{
-		cout << "PeopleA 클래스 정보" << endl;
-	}
-
-	// friend 키워드는 public, private, protected 
-	// 어디에서든 사용가능합니다.
-	friend class PeopleB;
-public :
-	PeopleA(int age)
-	{
-		this->age = age;
-	}
-};
-
-class PeopleB 
-{
-public :
-	void FriendInformation(PeopleA people)
-	{
-		cout << people.age << endl;
-	}
-};
-*/
 
 int main()
 {
-	// 가상 소멸자
+	// 다중 상속
 	/*
-	// 가상 소멸자가 호출되면 상속 구조의 맨 아래에 있는 하위 클래스의
-	// 소멸자가 대신 호출되면서 상위 클래스의 소멸자가 순서대로 호출됩니다.
-	A * aptr = new B();
+	Computer computer(1,40);
 
-	delete aptr;
+	// 다중 상속일 때 같은 이름의 함수를 사용하려면 클래스를 명시하고 
+	// 범위 지정 연산자를 사용해서 함수를 호출해야합니다.
+	computer.Keyboard::Input();	// keyboard 클래스의 Input();
+	computer.Mouse::Input();
 	*/
 
-	// 프렌드
-    /*
-	PeopleA a(10);
-	Information(a);
-	PeopleB b; 
-	b.FriendInformation(a);
-    */
-
-	// 곱셈
+	// 다이아몬드 상속
 	/*
-	int number1 = 0;
-	int number2 = 0;
-
-	cin >> number1 >> number2;
-
-	cout << number2 % 10 * number1 << endl;
-	cout << number2 / 10 % 10 * number1 << endl;
-	cout << number2 / 100 * number1 << endl;
-	cout << number1 * number2 << endl;
+	// 하나의 자식 클래스가 상속받는 서로 다른 부모 클래스들이
+	// 같은 조부모 클래스를 상속받는 구조입니다.
+	D d;
 	*/
 
-	// 중복되지 않는 랜덤값
-	// 1.배열을 생성합니다.
-	// 2.배열에 순차적으로 값을 저장합니다.
-	// [5][4][3][2][1]
 
-	int array[10];
-	srand(time(NULL));
+	// 나머지
+	int array[10] = { 0, };
+	int result = 0;
+	int input = 0;
 
-	// 배열의 인덱스 == 배열의 인덱스 + 1
-	// [4] [5] [] [] [] [] [] [] [] []
 	for (int i = 0; i < 10; i++)
 	{
-		array[i] = rand() % 10 + 1;
-		cout << array[i] << endl;
+		cin >> input;
+		array[i] = input % 42;
 	}
+
+
+	// [0][1][2][3][4][5][6][7][8][9]
+	//  0  0  0  0  0  0  0  0  0  0
+	for (int i = 0; i <= 9; i++)
+	{
+		int count = 0;
+					  
+		for (int j = i + 1; j <= 9; j++)
+		{
+			if (array[i] == array[j])
+			{
+				count++;  
+			}
+		}
+
+		if (count == 0)
+		{
+			result++;
+		}
+	}
+
+	cout << result << endl;
 
 	return 0;
 }
