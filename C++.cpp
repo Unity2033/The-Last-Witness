@@ -1,118 +1,146 @@
 #include <iostream>
-#include <memory>
+#include <vector>
 
 using namespace std;
 
-// 스마트 포인터란?
-/*
-// 포인터처럼 동작하는 클래스 템플릿으로 사용이 끝난 메모리를
-// 자동으로 해제하는 포인터입니다.
+// 템플릿 (클래스와 함수)
+// 데이터의 형식에 의존하지 않고, 하나의 값이 여러 다른 데이터
+// 타입을 가질 수 있는 기능입니다.
 
-class Player
+// 컴파일러는 미리 함수의 형틀을 기억한 다음 함수가 호출될 때
+// 실제 함수를 호출합니다.
+
+// 함수 템플릿은 선언이기 때문에 메모리 할당과 구체화되어 있지
+// 않은 상태입니다.
+
+// 함수 템플릿
+/*
+template <typename T>
+void Calculator(T x, T y)
 {
-public :
-	Player()
+	cout << "x의 값 : " << x << endl;
+	cout <<	"y의 값 : " << y << endl;
+}
+*/
+
+// 클래스 템플릿
+/*
+template <class T>
+class Game
+{
+private :
+	T num1;
+	T num2;
+public:
+	Game(T _num1, T _num2)
 	{
-		cout << "Player 생성" << endl;
+		num1 = _num1;
+		num2 = _num2;
 	}
 
-	~Player()
+	T GetNumber1()
 	{
-		cout << "Player 소멸" << endl;
+		return num1;
+	}
+
+	T GetNumber2()
+	{
+		return num2;
 	}
 };
 */
 
-class Person
+// 템플릿 특수화
+/*
+// 템플릿에서 미리 지정해놓은 타입이 들어왔을 경우
+// 따로 처리하고 있는 때 사용하는 템플릿 기능입니다.
+template <typename T>
+void Add(T x, T y)
 {
-public:
-	// shared_ptr로 선언할 경우 순환 참조가 발생합니다.
-	// weak_ptr로 선언할 경우 순환 참조를 예방할 수 있습니다.
-	weak_ptr<Person> person;
+	cout << "x의 값 : " << x << endl;
+	cout << "y의 값 : " << y << endl;
+}
 
-	Person()
-	{
-		cout << "생성" << endl;
-	}
+template<> // <- 템플릿의 특수화
+void Add(int x, int y) // <- Add()함수를 호출할 때 int 매개변수로                         
+{	                   //    들어오게 되면 이 함수로 처리하겠다.
 
-	~Person()
-	{
-		cout << "소멸" << endl;
-	}
-};
-
+}
+*/
 
 int main()
 {					
-	// shared_ptr 포인터
+	// 함수 템플릿
 	/*
-	// 어떤 하나의 객체를 참조하는 스마트 포인터의 갯수를 참조하는 포인터입니다.
-	// 참조하고 있는 스마트 포인터의 갯수를 참조 카운트라고 합니다.
+	Calculator(10, 20);
 
-	// 참조 카운트란?
-	// 해당 메모리를 참조하는 포인터가 몇개가 있는지 나타내는 값입니다.
-	// 참조하는 포인터가 추가되면 1씩 증가하고 참조하는 포인터가 끊어지면 1씩 감소합니다.
+	Calculator(10.5f, 6.7f);
 
-	// 첫번째로 초기화하는 방법
-	// shared_ptr<int>	ptr1(new int(5));
-	// 두번째로 초기화하는 방법 
-	// shared_ptr<int>	ptr1 = make_shared<int>(5);
-
-	// shared_ptr에서 참조 카운트를 확인하는 방법 
-	// ptr1.use_count() 
-
-	shared_ptr<Player> ptr1(new Player());
-
-	cout << "ptr1 참조 카운트 : " << ptr1.use_count() << endl;
-
-	shared_ptr<Player> ptr2 = ptr1;
-
-	cout << "ptr1 참조 카운트 : " << ptr2.use_count() << endl;
+	Calculator('A', 'B');
 	*/
 
-	// unique_ptr 포인터
+	// 클래스 템플릿
 	/*
-	// 하나의 스마트 포인터만 가리킬 수 있는 포인터입니다.
-	// shared_ptr 참조 카운트를 1 이상 넘길 수 없습니다.
+	Game<int> game1(10,20);
+	cout << game1.GetNumber1() << endl;
+	cout << game1.GetNumber2() << endl;
 
-	unique_ptr<Player> ptr1(new Player());
-
-	// ptr1이 가지고 있던 메모리 소유권(동적으로 할당한 메모리)를 
-	// ptr2에게 메모리 소유권을 넘겨주는 과정입니다.
-
-	unique_ptr<Player> ptr2 = move(ptr1);
-
-	// reset : 메모리 영역을 삭제할 수 있는 함수
-	ptr2.reset();
-
-	// unique_ptr<int> ptr3 = ptr1;	ERROR
+	Game<float> game2(8.5f, 9.6f);
+	cout << game2.GetNumber1() << endl;
+	cout << game2.GetNumber2() << endl;
 	*/
 
-	// weak_ptr 포인터
-	// 하나 이상의 shared_ptr 인스턴스가 소유하는 객체에 대한 접근을
-	// 제공하지만, 참조 카운트에 포함되지 않는 스마트 포인터입니다.
+	// 템플릿 특수화
+	/*
+	Add(10, 20);
+	*/
 
-	// 만약에 서로가 상대를 가리키는 shared_ptr을 가지고 있다면,
-	// 참조 횟수는 절대 1 이하로 떨어지지 않습니다.
-	// shared_ptr이 해제가 되지 않는 문제가 발생합니다.
+	// STL (Standart Template Library)
+	// 표준 템플릿 라이브러리
+	// 자료구조와 알고리즘을 Template 형태로 제공하는 라이브러리입니다.
 
-	// 순환 참조
-    // 서로 상대를 참조하는 상황입니다.
+	// STL의 구성
+    /*
+	// 1. 컨테이너
+	// 데이터를 저장하는 객체, 자료구조를 모아둔 집합입니다.
+	//   - A : 순차 컨테이너
+	//         자료를 순차적으로 저장하는 컨테이너입니다.
+	//   - B : 연관 컨테이너
+	//         트리 구조로 구성되어 있는 컨테이너입니다.
+	//         검색 및 삽입 그리고 삭제가 빠르다.
+	//   - C : 컨테이너 어댑터
+	//         기존의 컨테이너의 일부의 기능만 사용 가능하게 하여
+	//         기능이 제한되거나 변형되어 있는 컨테이너입니다.
+	*/
 
-	// shared_ptr 인스턴스 사이에 순환 참조를 제거하기 위해 사용하는
-	// 스마트포인터입니다.
+	// Vector
+	// 동적으로 원소를 추가할 수 있으며, 크기가 자동으로 늘어나는
+	// 컨테이너입니다.	
+	vector<int> data;
 
-	shared_ptr<Person> obj1(new Person());
-	shared_ptr<Person> obj2(new Person());
+	// vector의 push_back은 뒤에서부터 데이터를 넣어줍니다.
+	data.push_back(10);
+	data.push_back(5);
 
-	cout << "obj1 참조 카운트 : " << obj1.use_count() << endl;
-	cout << "obj2 참조 카운트 : " << obj2.use_count() << endl;
+	// vector의 pop_back은 뒤에서부터 	데이터를 뺍니다.
+	data.pop_back();
 
-	obj1->person = obj2;
-	obj2->person = obj1;
+	// vector의 size는 vector 가지고 있는 컨테이너의 크기를 반환합니다.
+	data.size();
 
-	cout << "obj1 참조 카운트 : " << obj1.use_count() << endl;
-	cout << "obj2 참조 카운트 : " << obj2.use_count() << endl;
+	for (int i = 0; i < data.size(); i++)
+	{
+		cout << data[i] << endl;
+	}
+
+	// vector의 front는 맨 앞에 있는 원소를 출력합니다.
+	cout << data.front() << endl;
+
+	// vector 같은 경우에는 맨 앞에 원소를 추가할 수 없습니다.
+	
+	// list
+	// Deque
+
 
 	return 0;
 }
