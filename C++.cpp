@@ -1,101 +1,94 @@
 #include <iostream>
-#include <queue>
-#include <stack>
+#include <map>
+#include <set>
+
 using namespace std;
 
 int main()
 {
-	// 큐 (FIFO) First In First Out
+	// STL vector, list	// 선형 컨테이너
+	// STL stack, queue // 컨테이너 어댑터
+	// STL map, set // 연관 컨테이너
+
+	// MAP이란?
 	/*
-	// 먼저 들어온 데이터가 가장 먼저 나가는 구조의 컨테이너입니다.
-	std::queue<int> Queue;
+	// 리스트나 배열처럼 순차적으로 해당 요소의 값을
+	// 구하지 않고 key 값을 통해서 value 값을 얻습니다.
+	std::map<string, int> mapData;
+	mapData.insert({ "검", 1000 });
+	mapData.insert({ "총", 4000 });
+	mapData.insert({ "옷", 2500 });
 
-    // [ [10] [20] [30] ]
-	// Queue.push(값) : 큐 컨테이너에 데이터를 넣어주는 함수입니다.
-	Queue.push(10); // [10]
-	Queue.push(20);	// [10] [20]
-	Queue.push(30);	// [10] [20] [30]
+	// (value)값은 중복될 수 있지만, Key 값은 고유한 값으로
+	// 중복이 되지않습니다.
 
-	int value = Queue.size();
-
-	while (Queue.empty() == 0)
+	for (auto iter = mapData.begin(); iter != mapData.end(); iter++)
 	{
-		cout << Queue.front() << endl;
-		Queue.pop(); // [20] [30]
+		// KEY : iter->first로 접근해야 합니다.
+		// VALUE : ither->second로 접근해주셔야 합니다.
+		cout << "KEY : " << iter->first << " VALUE : " << iter->second << endl;
 	}
-	
-	// 큐 컨테이너에 데이터가 다 빠진 상태 front() 라던지
-	// pop() 함수를 사용하게 되면 큐 언더플로우가 발생합니다.
 
-	// Queue.pop() : 큐 컨테이너에서 데이터를 꺼내는 함수입니다.
-	// Queue.pop(); // [20] [30]
+	// MAP 키값을 기준으로 정렬하며, 오름차순으로 정렬합니다.
+	// 첫번째 주소를 가리키는 iterator가 mapData.end()까지 순회하면서
+	// "신발" 이라는 Key 값이 있다면 조건문을 실행합니다.
 
-	// Queue.front() : 큐 컨테이너에 저장되어 있는 원소중에서 가장 앞에 있는
-	// 값을 출력하는 함수입니다.
-	// cout << Queue.front() << endl;
+	if (mapData.find("신발") != mapData.end())
+	{
+		cout << "현재 KEY 값이 존재합니다." << endl;
+	}
+	else
+	{
+		cout << "현재 KEY 값이 존재하지 않습니다." << endl;
+	}
+	 
+	// 중복된 키 값을 삽입하는 과정
+	// MAP은 중복된 KEY 값을 허용하지 않습니다.
+	mapData.insert({ "검", 3000 });
 
-	// Queue.size() : 큐 컨테이너의 크기를 출력하는 함수입니다.
-	cout << Queue.size() << endl;
+	// VALUE가 중복되면 mapData에 Insert가 허용됩니다.
+	mapData.insert({ "투구", 1000 });
 
-	// Queue.Empty() : 큐 컨테이너가 비어있는지 확인하는 함수입니다.
-	cout << Queue.empty() << endl;
+	// mapData에 있는 데이터를 삭제하려면 erase로 키값을 입력해주시면 됩니다.
+	mapData.erase("검");
+
+	for (auto iter = mapData.begin(); iter != mapData.end(); iter++)
+	{
+		// KEY : iter->first로 접근해야 합니다.
+		// VALUE : ither->second로 접근해주셔야 합니다.
+		cout << "KEY : " << iter->first << " VALUE : " << iter->second << endl;
+	}
 	*/
 
-	// 스택 (LIFO) Last In First Out
-	/*
-	// 가장 마지막에 들어온 데이터가 가장 먼저 나가는 구조의 컨테이너입니다.
-	std::stack<int> Stack;
-	std::stack<int> otherStack;
+	// SET이란?
+	// 키값으로만 원소들의 집합으로 이루어진 컨테이너입니다.
+	// SET 자료구조도 키값에 중복을 허용하지 않습니다.
+	std::set<int> setData;
 
-	otherStack.push(-100); // -100
-	otherStack.push(-200); // -200 -100
-	otherStack.push(-300); // -300 -200 -100
+	setData.insert(10);
+	setData.insert(20);
+	setData.insert(30);
+	setData.insert(40);
+	setData.insert(50);
+	setData.insert(60);
 
-	Stack.push(10); // 10
-	Stack.push(20);	// 20 10
-	Stack.push(30);	// 30 20 10
-
-	// swap() : 두 스택의 내용을 바꿀 수 있는 함수입니다. 
-	swap(Stack, otherStack);
-
-	// Stack.top() : 가장 위에 있는 원소를 출력하는 함수입니다.
-	cout << Stack.top() << endl;
-
-	// Stack.pop() : 가장 위에 있는 원소를 빼는 함수입니다.
-	Stack.pop();
-
-	// Stack.size() : 스택 컨테이너에 들어있는 크기를 반환하는 함수입니다.
-	cout << Stack.size() << endl;
-	*/
-
-	int number = 0;
-	int array[100] = { 0, };
-	int selectNumber = 0;
-	int result = 0;
-
-	cin >> number;
-
-	for (int i = 0; i < number; i++)
+	for (auto iter = setData.begin(); iter != setData.end(); iter++)
 	{
-		cin >> array[i];
+		cout << *iter << endl;
 	}
 
-	cin >> selectNumber;
+    // 값이 중복되었지만, 안되었는지 판단합니다.
+	// 중복된 값을 넣지 않으면 값이 SET 자료구조에 저장됩니다.
+	pair<set<int>::iterator, bool> check = setData.insert(15);
 
-	for (int i = 0; i < number; i++)
+	if (check.second)
 	{
-		// 우리가 selectNumber에 입력한 값과
-		// 배열 안에 있는 값이 같다면
-		if (array[i] == selectNumber)
-		{
-			result++;
-		}
+		cout << "삽입 완료" << endl;
 	}
-
-	cout << result << endl;
-
-
-
+	else
+	{
+		cout << "삽입 실패 (중복된 값이 존재합니다.)" << endl;
+	}
 
 	return 0;
 }
