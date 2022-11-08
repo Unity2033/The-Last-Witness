@@ -1,94 +1,136 @@
 #include <iostream>
-#include <map>
-#include <set>
 
 using namespace std;
 
+// const 함수
+/*
+// const 함수 내부에서 변수의 값을 변경할 수 없도록 선언하는 함수입니다.
+class Character
+{
+private :
+	int health;
+	string name;
+public:
+	void SetInfo(int m_health, string m_name)
+	{
+		health = m_health;
+		name = m_name;
+	}
+
+	void GetInfo() const
+	{
+		// const 함수의 역할은 함수 내에서 멤버 변수의 값을 읽기 전용으로
+		// 선언하기 위해서 사용되는 기능입니다.
+		// health = 300;
+
+		cout << "health의 값 : " << health << endl;
+		cout << "name의 값 : " << name << endl;
+	}
+
+};
+*/
+
+// final 
+/*
+// 더 이상 클래스나 가상함수를 상속받지 않고 재정의할 수 없도록
+// 설정해주는 키워드입니다.
+class A
+{
+public:
+	void FunctionA()
+	{
+		cout << "A의 함수입니다." << endl;
+	}
+
+	virtual void FunctionB1()
+	{
+		cout << "A 클래스에서 호출한 B1 함수입니다." << endl;
+	}
+};
+
+// 클래스에 final을 설정하게 되면 B 클래스 밑에 자식 클래스를
+// 설정할 수없습니다.
+class B : public  A
+{
+public :
+	virtual void FunctionB()
+	{
+		cout << "B의 함수입니다." << endl;
+	}
+
+	void FunctionB1() final
+	{
+		cout << "B 클래스에서 호출한 B1의 함수입니다." << endl;
+	}
+};
+
+class C	: public B
+{
+	void FunctionB()
+	{
+		cout << "C 클래스에서 호출한 B의 함수입니다. " << endl;
+	}
+
+	// FunctionB1 함수는 B 클래스에서 final로 선언했기 때문에
+	// 자식 클래스 C에서 재정의할 수 없습니다.
+	// void FunctionB1() { }	
+};
+*/
+
+// 상속의 접근 지정자
+/*
+// 상속 private, protected, public
+// private : 외부에서 접근못하도록 설정하는 제한자입니다.
+// protected : 클래스 내부와 자기가 상속하는 클래스까지만 접근을 허용하는 제한자입니다.
+// public : 외부에서도 접근을 허용하는 제한자입니다.
+class CPU
+{
+public:
+	void Count()
+	{
+		cout << "CPU Count" << endl;
+	}
+};
+
+// 상속을 할 때 접근 지정자를 명시적으로 선언하지 않으면
+// 기본 접근 지정자(private)로 선언됩니다.
+
+// 상속에서 private 접근 지정자로 상속받게 되면
+// 부모 클래스의 멤버를 자식 클래스에서 호출할 수 없습니다.
+class ALU : public CPU
+{
+
+};
+*/
+
+// is-a 관계
+// is-a 관계는 일반적인 개념과 구체적인 개념과의 관계입니다.
+
+// has-a 관계
+// 구성 관계를 의미하며 한 오브젝트(구성된 객체, 또는 부분/멤버 객체라고도 부릅니다)
+// 가 다른 오브젝트(composite type이라고 부릅니다)에 "속한다(belongs to)"를 말합니다.
+
 int main()
 {
-	// STL vector, list	// 선형 컨테이너
-	// STL stack, queue // 컨테이너 어댑터
-	// STL map, set // 연관 컨테이너
-
-	// MAP이란?
+	// const 함수
 	/*
-	// 리스트나 배열처럼 순차적으로 해당 요소의 값을
-	// 구하지 않고 key 값을 통해서 value 값을 얻습니다.
-	std::map<string, int> mapData;
-	mapData.insert({ "검", 1000 });
-	mapData.insert({ "총", 4000 });
-	mapData.insert({ "옷", 2500 });
+	Character character;
 
-	// (value)값은 중복될 수 있지만, Key 값은 고유한 값으로
-	// 중복이 되지않습니다.
+	character.SetInfo(99, "칼리스타");
 
-	for (auto iter = mapData.begin(); iter != mapData.end(); iter++)
-	{
-		// KEY : iter->first로 접근해야 합니다.
-		// VALUE : ither->second로 접근해주셔야 합니다.
-		cout << "KEY : " << iter->first << " VALUE : " << iter->second << endl;
-	}
-
-	// MAP 키값을 기준으로 정렬하며, 오름차순으로 정렬합니다.
-	// 첫번째 주소를 가리키는 iterator가 mapData.end()까지 순회하면서
-	// "신발" 이라는 Key 값이 있다면 조건문을 실행합니다.
-
-	if (mapData.find("신발") != mapData.end())
-	{
-		cout << "현재 KEY 값이 존재합니다." << endl;
-	}
-	else
-	{
-		cout << "현재 KEY 값이 존재하지 않습니다." << endl;
-	}
-	 
-	// 중복된 키 값을 삽입하는 과정
-	// MAP은 중복된 KEY 값을 허용하지 않습니다.
-	mapData.insert({ "검", 3000 });
-
-	// VALUE가 중복되면 mapData에 Insert가 허용됩니다.
-	mapData.insert({ "투구", 1000 });
-
-	// mapData에 있는 데이터를 삭제하려면 erase로 키값을 입력해주시면 됩니다.
-	mapData.erase("검");
-
-	for (auto iter = mapData.begin(); iter != mapData.end(); iter++)
-	{
-		// KEY : iter->first로 접근해야 합니다.
-		// VALUE : ither->second로 접근해주셔야 합니다.
-		cout << "KEY : " << iter->first << " VALUE : " << iter->second << endl;
-	}
+	character.GetInfo();
 	*/
 
-	// SET이란?
-	// 키값으로만 원소들의 집합으로 이루어진 컨테이너입니다.
-	// SET 자료구조도 키값에 중복을 허용하지 않습니다.
-	std::set<int> setData;
+	// final
+	/*
+	C cClass;
+	*/
 
-	setData.insert(10);
-	setData.insert(20);
-	setData.insert(30);
-	setData.insert(40);
-	setData.insert(50);
-	setData.insert(60);
-
-	for (auto iter = setData.begin(); iter != setData.end(); iter++)
-	{
-		cout << *iter << endl;
-	}
-
-    // 값이 중복되었지만, 안되었는지 판단합니다.
-	// 중복된 값을 넣지 않으면 값이 SET 자료구조에 저장됩니다.
-	pair<set<int>::iterator, bool> check = setData.insert(15);
-
-	if (check.second)
-	{
-		cout << "삽입 완료" << endl;
-	}
-	else
-	{
-		cout << "삽입 실패 (중복된 값이 존재합니다.)" << endl;
-	}
+	// 상속에서 접근 지정자
+	/*
+	ALU alu;
+	alu.Count();
+	*/
 
 	return 0;
 }
