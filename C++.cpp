@@ -1,125 +1,118 @@
 #include <iostream>
-#include <stack>
-#include <unordered_map>
-#include <queue>
 
 using namespace std;
 
-// 스택 구현하기
-/*
-int stackArray[5];
-int top = -1;
+int buffer[5] = { 0, };
 
-int Empty()
+class Queue
 {
-	if (top == -1)
+private:
+	int rear = -1;
+	int front = -1;
+public:
+
+	void BufferPrint()
 	{
-		return 1;
+		for (int i = 0; i < 5; i++)
+		{
+			cout << buffer[i] << endl;
+		}
 	}
-	else
+
+	bool Empty()
 	{
-		return 0;
+		if (front == rear)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
-}
 
-void Push(int x)
-{
-	stackArray[++top] = x;
-}
+	bool IsFull()
+	{
+		if (rear == 4)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
 
-int Size()
-{
-	return top + 1;
-}
+	void Push(int value)
+	{
+		if (IsFull() == true)
+		{	// 데이터가 다 차있는 상태라면 데이터를 못 넣도록 해야합니다.
+			cout << "데이터를 넣을 수 없습니다." << endl;
+		}
+		else
+		{
+			buffer[++rear] = value;
+		}
+	}
 
-int Top()
-{
-	if (top == -1)
-		return -1;
-	else
-		return stackArray[top];
-}
+	int Pop()
+	{
+		if (Empty() == true)
+		{
+			cout << "큐가 비었습니다." << endl;
+			return 0;
+		}
+		else
+		{
+			// 출력할 값을 잠깐 보관하는 단계입니다.
+			int temp = buffer[++front];	
 
-int Pop()
-{					
-	return stackArray[top--];
-}
-*/
+			buffer[front] = 0;
+
+			return temp; // return 값을 반환하는 기능도 하면서 
+			             // 함수를 종료시켜 줍니다.
+		}
+		// 컨테이너에 데이터가 없다면 데이터를 못 꺼내도록 해야합니다.
+	}
+
+	// push	== Enqueue
+	// pop == Dequeue
+
+};
+
 
 int main()
 {	
-	// 스택 구현하기
-	/*
-	std::stack<int> Stack;
-	//Stack.push(10);
-	//Stack.pop();
-	//cout << Stack.top() << endl;
-	//cout << Stack.empty() << endl;
+	// 큐 
+	// FIFO (first in first out)
+	// 먼저 들어온 데이터가 먼저 나가는 구조입니다.
 
-	Push(1);
-	Push(2);
-	Push(3);
+	// 선형 큐 
+	// 선형 큐의 문제점
+	// 데이터를 추가할 때 index의 값을 감소하지 않고 증가만 시키기 때문에 
+	// 실제로 앞에 있는 데이터가 없을 때도 큐에 데이터를 저장할 수 없는 형태가 나타납니다.
+	Queue queue;
+	queue.Push(1);
+	queue.Push(2);
+	queue.Push(3);
+	queue.Push(4);
+	queue.Push(5);
 
-	cout << "가장 위에 있는 값 : " << Top() << endl;
-	cout << "스택의 크기 : " << Size() << endl;
-	cout << "스택이 비어있나요? : " << Empty() << endl;
+	queue.BufferPrint();
 
-	cout << Pop() << endl;
-	cout << Pop() << endl;
-	cout << Pop() << endl;
+	cout << queue.Pop() << endl;
+	cout << queue.Pop() << endl;
+	cout << queue.Pop() << endl;
+	cout << queue.Pop() << endl;
+	cout << queue.Pop() << endl;
 
-	cout << "스택의 크기 : " << Size() << endl;
-	cout << "스택이 비어있나요? : " << Empty() << endl;
+	queue.BufferPrint();
 
-	// 1. pop 
-	// 2. push (O)
-	// 3. size : 현재 컨테이너에 들어있는 데이터의 갯수
-	// 4. empty (O) : Stack에 데이터 비어있다면 1을 반환합니다.
-	//                Stack에 데이터가 있다면 0을 반환합니다.
-	// 5. top
-	*/
+	queue.Push(10);
 
-	// unordered_map 선언
-	/*
-	unordered_map<int, string> uMap;
 
-	uMap.insert(make_pair(10, "Ten"));
-	uMap.insert(make_pair(1, "One"));
-	uMap.insert(make_pair(7, "Seven"));
-	uMap.insert(make_pair(2, "Two"));
+	// 원형 큐
 
-	for (auto iter = uMap.begin(); iter != uMap.end(); iter++)
-	{
-		cout << "uMap의 key : " << iter->first << endl;
-		cout << "uMap의 value : " << iter->second << endl;
-	}
-	*/
-
-	// 우선 순위 큐
-	// 큐 컨테이너에 있는 원소 중 가장 큰 값이 TOP 위치에 유지되도록
-	// 설정되어 있는 자료구조입니다.
-
-	// 우선 순위 큐의 경우 내부적으로 힙(Heap)이라는 자료구조로 
-	// 구성되어 있습니다. 
-
-	// 우선 순위 큐를 선언합니다.
-	priority_queue<int> pQueue;
-
-	pQueue.push(3);
-	pQueue.push(1);
-	pQueue.push(7);
-	pQueue.push(5);
-	pQueue.push(2);
-
-	cout << "큐의 사이즈 : " << pQueue.size() << endl;
-
-	// pQueue.empty() = 0 (false)
-	// pQueue.empty() = 1 (true)
-	while (pQueue.empty() == false)	// pQueue.empty가 true가 될 때까지 반복합니다.
-	{
-		cout << pQueue.top() << endl; // 제일 위에 있는 값을 출력합니다.
-		pQueue.pop(); // 제일 위에 있는 원소를 뺍니다.
-	}
 
 	return 0;
 }
