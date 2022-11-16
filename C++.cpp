@@ -2,90 +2,67 @@
 
 using namespace std;
 
-int buffer[6];
-
-class CircleQueue
+// 클래스의 메모리 구조
+class Object
 {
-private:
-	int front = 6 - 1; // 배열의 최대 크기 - 1
-	int rear = 6 - 1; // 배열의 최대 크기 - 1
+// 클래스 오프셋
+// 동일한 오브젝트 안에서 오브젝트 처음부터 주어진 요소나
+// 지점까지의 변위차를 정수형로 나타내는 값입니다.
+
+// ex) A[6] = "ABCDE";
+// C라는 값은 A 시적점에서 2의 오프셋가지는 값입니다.
+
 public:
-	bool Empty()
+	char charData; // 1 byte
+	int intData;   // 4 byte
+	double doubleData; // 8 byte
+
+	// static 변수는 클래스 내부에 메모리가 잡히지 않습니다.
+	static int staticData; // 4 byte
+
+	void StaticDataFunction()
 	{
-		if (front == rear)
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}
-	}
-
-	bool isFull()
-	{
-		if ((rear + 1) % 6 == front)
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}
-	}
-
-	void Push(int value)
-	{	 
-		if (isFull() == true)
-		{
-			cout << "현재 큐에 데이터를 넣을 수 없습니다." << endl;		
-		}
-		else
-		{
-			rear = (rear + 1) % 6;
-			buffer[rear] = value;
-		}
-	}
-
-	int Pop()
-	{
-		if (Empty() == true)
-		{
-			cout << "데이터가 비어있습니다." << endl;		
-		}
-		else
-		{
-			front = (front + 1) % 6;
-			int temp = buffer[front];
-
-			buffer[front] = 0;
-			return temp;
-		}
+		staticData++;
 	}
 };
 
+// 클래스 내부에 있는 static 변수는 클래스 외부에서
+// 전역 변수처럼 초기화를 해야합니다.
+int Object::staticData = 0;
 
 int main()
 {	
-	// 원형 큐는 배열의 마지막 인덱스를 비워주어야 합니다.
-	CircleQueue Queue;
-	Queue.Push(10);
-	Queue.Push(20);
-	Queue.Push(30);
-	Queue.Push(40);
-	Queue.Push(50);
+	Object object1;
+	Object object2;
+	Object object3;
+	
+	object1.StaticDataFunction();
+	object2.StaticDataFunction();
+	object3.StaticDataFunction();
 
-	cout << Queue.Pop() << endl;
-	cout << Queue.Pop() << endl;
-	cout << Queue.Pop() << endl;
-	cout << Queue.Pop() << endl;
-	cout << Queue.Pop() << endl;
 
-	Queue.Push(10);
-	Queue.Push(20);
-	Queue.Push(30);
-	Queue.Push(40);
-	Queue.Push(50);
+	cout << Object::staticData << endl;
+	
+
+
+	// 클래스의 메모리
+	/*
+	object.charData = 'A';
+	object.intData = 10;
+	object.doubleData = 30.5;
+
+	// 클래스의 메모리 크기를 결정하는 것은 멤버 변수 중에서
+	// 가장 큰 자료형의 배수가 되도록 설정합니다.
+	cout << "Obejct 클래스의 크기 : " << sizeof(object) << endl;
+	*/
+
+	// 클래스의 오프셋
+    /*
+	cout << (int)(&(((Object*)0)->charData)) << endl;
+	cout << (int)(&(((Object*)0)->intData)) << endl;
+	cout << (int)(&(((Object*)0)->doubleData)) << endl;
+	*/
+
 
 	return 0;
 }
