@@ -2,89 +2,38 @@
 
 using namespace std;
 
-struct Node
-{
-	int data;
-	Node * prev;
-	Node * next;
-};
-
-Node * head = NULL;
-Node * tail = NULL;
-
-void Insert(Node * targetNode, int value)
-{
-	Node * newNode = new Node;
-	newNode->data = value;
-
-	newNode->prev = targetNode;
-	newNode->next = targetNode->next;
-
-	targetNode->next->prev = newNode;
-	targetNode->next = newNode;
-}
-
-void Remove(Node * targetNode)
-{
-	Node * deleteNode = targetNode->next;
-
-	if (deleteNode == NULL)
-	{
-		return;
-	}
-
-	deleteNode->next->prev = targetNode;
-	targetNode->next = deleteNode->next;
-
-	delete deleteNode;
-}
-
-void FrontOutput()
-{
-	Node * currentNode = head->next;
-
-	while (currentNode != tail)
-	{
-		cout << currentNode->data << endl;
-		currentNode = currentNode->next;
-	}
-}
-
-void BackOutput()
-{
-	Node * currentNode = tail->prev;
-
-	while (currentNode != head)
-	{
-		cout << currentNode->data << endl;
-		currentNode = currentNode->prev;
-	}
-}
-
 int main()
 {	
-	     // 더미 노드 1 
-	head = new Node;
+	// 삽입 정렬 
+	// 배열의 모든 요소를 앞에서부터 차례대로
+	// 이미 정렬된 배열 부분과 비교하여, 자신의
+	// 위치를 찾아 삽입함으로써 정렬을 완성하는 알고리즘입니다.
 
-	     // 더미 노드 2
-	tail = new Node;
+	int array[5] = { 5, 3, 7, 1, 2 };
+	int j = 0;
+	int key = 0;
 
-	head->next = tail;
-	head->prev = NULL;
+	for (int i = 1; i < 5; i++)
+	{
+	 //  3       3
+	    key = array[i];
 
-	tail->next = NULL;
-	tail->prev = head;
+		// j가 0일 때도 반복이됩니다.	
+	
+		for (j = i - 1; j >= 0 && array[j] > key; j--)
+		{
+			array[j + 1] = array[j];
+		}  
 
-	Insert(head, 10);
-	Insert(head, 20);
-	Insert(head, 30);
+		// j가 -1이 되어있겠죠?
+		// j(-1) + 1 = 0;
+		array[j + 1] = key;
+	}
 
-	Remove(head);
-
-	FrontOutput();
-	BackOutput();
-
-
+	for (int i = 0; i < 5; i++)
+	{
+		cout << array[i] << endl;
+	}
 
 	return 0;
 }
