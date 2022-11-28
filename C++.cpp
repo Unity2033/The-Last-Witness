@@ -2,38 +2,70 @@
 
 using namespace std;
 
-int main()
-{	
-	// 삽입 정렬 
-	// 배열의 모든 요소를 앞에서부터 차례대로
-	// 이미 정렬된 배열 부분과 비교하여, 자신의
-	// 위치를 찾아 삽입함으로써 정렬을 완성하는 알고리즘입니다.
+struct Node
+{
+	int data;
+	Node * next;
+};
 
-	int array[5] = { 5, 3, 7, 1, 2 };
-	int j = 0;
-	int key = 0;
+Node * FrontInsert(Node * head, int value)
+{
+	Node * newNode = new Node;
+	newNode->data = value;
 
-	for (int i = 1; i < 5; i++)
+	if (head == NULL)
 	{
-	 //  3       3
-	    key = array[i];
-
-		// j가 0일 때도 반복이됩니다.	
+		head = newNode;
+		newNode->next = head;
+	}
+	else
+	{
+		newNode->next = head->next;
+		head->next = newNode;
+	}
 	
-		for (j = i - 1; j >= 0 && array[j] > key; j--)
-		{
-			array[j + 1] = array[j];
-		}  
+	return head;
+}
 
-		// j가 -1이 되어있겠죠?
-		// j(-1) + 1 = 0;
-		array[j + 1] = key;
-	}
+Node * BackInsert(Node * head, int value)
+{
+	Node * newNode = new Node;
+	newNode->data = value;
 
-	for (int i = 0; i < 5; i++)
+	if (head == NULL)
 	{
-		cout << array[i] << endl;
+		head = newNode;
+		newNode->next = head;
 	}
+	else
+	{
+		newNode->next = head->next;
+		head->next = newNode;
+		head = newNode;
+	}
+
+	return head;
+}
+
+int main()
+{
+	// 원형 연결 리스트
+	Node * head = NULL;
+
+	head = FrontInsert(head, 100);
+	head = FrontInsert(head, 200);
+	head = BackInsert(head, 500);
+
+	Node * currentNode = head->next;
+
+	while (currentNode != head)
+	{
+		cout << currentNode->data << endl;
+		currentNode = currentNode->next;
+	}
+
+	cout << currentNode->data << endl;
+
 
 	return 0;
 }
