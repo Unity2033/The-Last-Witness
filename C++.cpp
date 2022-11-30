@@ -28,21 +28,43 @@ void Preorder(Node * root)
 {
 	if (root != NULL)
 	{
-	   // 값 출력
+	   // 값 출력  
+	   cout << root->data << " ";
 	   // 왼쪽 자식 노드 방문 
+	   Preorder(root->left);
 	   // 오른쪽 자식 노드 방문
+	   Preorder(root->right);
 	}
 }
 
 // 중위 순회
-// 1. 왼쪽 자식 노드를 출력
+// 1. 왼쪽 자식 노드 방문
 // 2. 자기 자신의 노드를 출력
-// 3. 오른쪽 자식 노드를 출력
+// 3. 오른쪽 자식 노드 방문
+void Inorder(Node* root)
+{
+	if (root != NULL)
+	{
+		Inorder(root->left);
+		cout << root->data << " ";
+		Inorder(root->right);
+	}
+}
 
 // 후위 순회
-// 1. 왼쪽 자식 노드를 출력
-// 2. 오른쪽 자식 노드를 출력
-// 3. 자기 자신의 노드를 출력합니다. 
+// 1. 왼쪽 자식 노드를 방문
+// 2. 오른쪽 자식 노드를 방문
+// 3. 자기 자신의 노드를 출력 
+void Postorder(Node * root)
+{
+	if (root != NULL)
+	{
+		Postorder(root->left);
+		Postorder(root->right);
+		cout << root->data << " ";
+	}
+
+}
 
 int main()
 {
@@ -63,6 +85,9 @@ int main()
 	Node * n2 = CreateNode(2, n4, n5);
 	Node * n1 = CreateNode(1, n2, n3);
 	
+	// Preorder(n1);
+	// Inorder(n1);
+	Postorder(n1);
 
 	return 0;
 }
