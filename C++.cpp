@@ -1,93 +1,60 @@
 #include <iostream>
 
 using namespace std;
+#define MEMORY 100
 
 struct Node
 {
-	int data;
-	Node * left;
-	Node * right;
+	int data[MEMORY];
+	int size = 0;
 };
 
-Node * CreateNode(int value, Node * leftPtr, Node * rightPtr)
+void Insert(Node * root, int value)
 {
-	Node * newNode = new Node;
+	int index;
 
-	newNode->data = value;
-	newNode->left = leftPtr;
-	newNode->right = rightPtr;
-
-	return newNode;
-}
-
-// 전위 순회
-// 1. 자기 자신부터 출력 
-// 2. 왼쪽의 자식 노드를 방문(출력)
-// 3. 오른쪽의 자식 노드를 방문(출력)
-void Preorder(Node * root)
-{
-	if (root != NULL)
+	// 힙에 데이터가 꽉 찬 상태라면 return
+	if (root->size >= MEMORY - 1)
 	{
-	   // 값 출력  
-	   cout << root->data << " ";
-	   // 왼쪽 자식 노드 방문 
-	   Preorder(root->left);
-	   // 오른쪽 자식 노드 방문
-	   Preorder(root->right);
+		return;
 	}
-}
 
-// 중위 순회
-// 1. 왼쪽 자식 노드 방문
-// 2. 자기 자신의 노드를 출력
-// 3. 오른쪽 자식 노드 방문
-void Inorder(Node* root)
-{
-	if (root != NULL)
-	{
-		Inorder(root->left);
-		cout << root->data << " ";
-		Inorder(root->right);
-	}
-}
+	root->size++;
+	index = root->size;
+	root->data[index] = value;
 
-// 후위 순회
-// 1. 왼쪽 자식 노드를 방문
-// 2. 오른쪽 자식 노드를 방문
-// 3. 자기 자신의 노드를 출력 
-void Postorder(Node * root)
-{
-	if (root != NULL)
+	// 종료되는 조건
+	// 1. 루트 노드일 때
+	// 2. 부모 노드의 값이 클 때 
+
+	//                   	// 부모 노드 1(10)		자식 노드 2 20
+	while ((index != 1) && (root->data[index/2] < root->data[index]))
 	{
-		Postorder(root->left);
-		Postorder(root->right);
-		cout << root->data << " ";
+		swap(root->data[index / 2], root->data[index]);
 	}
 
 }
 
 int main()
-{
-	// 트리 구조란?
-	// 한 노드에서 시작해서 다른 정점들을
-	// 순회하여 자기 자신에게 돌아오는 순환이
-	// 없는 연결 그래프입니다.
+{	
+	// 힙
+	// 최댓값과 최솟값을 찾아내는 연산을 
+	// 빠르게 하기 위해 고안된 완전 이진 트리를
+	// 기본으로 한 자료구조입니다.
+	Node heap;
 
-	// 이진 트리
-	// 최대 2개의 자식 노드를 가지는 트리입니다.
+	// 10
+	// 20
+	// 30
+	Insert(&heap, 10);
+	Insert(&heap, 20);
+	Insert(&heap, 30);
 
-	Node * n7 = CreateNode(7, NULL, NULL);
-	Node * n6 = CreateNode(6, NULL, NULL);
-	Node * n5 = CreateNode(5, NULL, NULL);
-	Node * n4 = CreateNode(4, NULL, NULL);
+	for (int i = 1; i <= 3; i++)
+	{
+		cout << heap.data[i] << endl;
+	}
 
-	Node * n3 = CreateNode(3, n6, n7);
-	Node * n2 = CreateNode(2, n4, n5);
-	Node * n1 = CreateNode(1, n2, n3);
-	
-	// Preorder(n1);
-	// Inorder(n1);
-	Postorder(n1);
 
 	return 0;
 }
