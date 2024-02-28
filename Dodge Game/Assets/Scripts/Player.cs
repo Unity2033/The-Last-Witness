@@ -1,0 +1,41 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Player : MonoBehaviour
+{
+    private Animator animator;
+    [SerializeField] Vector2 direction;
+    [SerializeField] float speed = 1.0f;
+    private SpriteRenderer spriteRenderer;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    void Update()
+    {
+        Move();
+    }
+
+    void Move()
+    {
+        direction.x = Input.GetAxisRaw("Horizontal");
+        direction.y = Input.GetAxisRaw("Vertical");
+
+        if(direction.x < 0)
+        {
+            animator.SetBool("Run", true);
+            spriteRenderer.flipX = false;
+        }
+        else if(direction.x > 0)
+        {
+            animator.SetBool("Run", true);
+            spriteRenderer.flipX = true;
+        }
+
+        transform.Translate(direction * speed * Time.deltaTime);
+    }
+}
