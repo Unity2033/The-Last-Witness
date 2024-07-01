@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 변수란?
+title: 상수란?
 image: 8.jpg
 date: 2018-03-02 13:35:20 +0200
 tags:
 categories: guide
 ---
 
-특정한 값을 저장하기 위해 메모리 공간을 생성하는 하는 것입니다.
+선언된 변수의 값을 수정할 수 없는 변수입니다.
 
 ***
 
@@ -32,7 +32,7 @@ categories: guide
 
 ###### Ordered list example:
 
-1. Poutine drinking vinegar bitters.
+1. 상수는 반드시 초기화를 진행해야합니다.
 2. Coloring book distillery fanny pack.
 3. Venmo biodiesel gentrify enamel pin meditation.
 4. Jean shorts shaman listicle pickled portland.
