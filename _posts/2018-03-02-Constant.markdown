@@ -4,7 +4,7 @@ title: 상수란?
 image: 8.jpg
 date: 2018-03-02 13:35:20 +0200
 tags:
-categories: guide
+categories:
 ---
 
 선언된 변수의 값을 수정할 수 없는 변수입니다.
@@ -32,7 +32,7 @@ categories: guide
 
 ###### Ordered list example:
 
-1. 상수는 반드시 초기화를 진행해야합니다.
+1. da
 2. Coloring book distillery fanny pack.
 3. Venmo biodiesel gentrify enamel pin meditation.
 4. Jean shorts shaman listicle pickled portland.
@@ -88,7 +88,3 @@ categories: guide
 ***
 
 #### Videos
-
-###### Youtube
-
-<iframe src="https://www.youtube.com/embed/iWowJBRMtpc" frameborder="0" allowfullscreen></iframe>
