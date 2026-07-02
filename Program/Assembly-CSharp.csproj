@@ -88,6 +88,7 @@
     <Compile Include="Assets\Scripts\Core\Singleton.cs" />
     <Compile Include="Assets\Scripts\User Interfaces\ErrorPanel.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Demo Chat\Code\Utilities\TextButtonTransition.cs" />
+    <Compile Include="Assets\Scripts\Managers\DialogManager.cs" />
     <Compile Include="Assets\Scripts\User Interfaces\RoomPanel.cs" />
   </ItemGroup>
   <ItemGroup>
