@@ -28,6 +28,8 @@ public class Character : MonoBehaviourPun
            Control();
 
            Animate();
+
+           Pause();
         }
     }
 
@@ -38,6 +40,16 @@ public class Character : MonoBehaviourPun
             Move();
 
             rotation.RotateY(rigidBody);
+        }
+    }
+
+    void Pause()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            MouseManager.Instance.SetMouse(true);
+
+            PanelManager.Instance.Open(Panel.Pause);
         }
     }
 

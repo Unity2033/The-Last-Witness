@@ -500,6 +500,7 @@
 "Assets/Scripts/Managers/RoomManager.cs"
 "Assets/Scripts/System/Rotation.cs"
 "Assets/Scripts/User Interfaces/ErrorPanel.cs"
+"Assets/Scripts/User Interfaces/PausePanel.cs"
 "Assets/Scripts/User Interfaces/RoomPanel.cs"
 "Assets/Scripts/User Interfaces/RoomStatus.cs"
 "Assets/Scripts/User Interfaces/SubscribePanel.cs"
