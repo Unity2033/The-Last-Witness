@@ -492,6 +492,7 @@
 "Assets/Scripts/Data/Data.cs"
 "Assets/Scripts/Data/Panel.cs"
 "Assets/Scripts/Managers/DialogManager.cs"
+"Assets/Scripts/Managers/GameManager.cs"
 "Assets/Scripts/Managers/MasterManager.cs"
 "Assets/Scripts/Managers/MouseManager.cs"
 "Assets/Scripts/Managers/NetworkManager.cs"
