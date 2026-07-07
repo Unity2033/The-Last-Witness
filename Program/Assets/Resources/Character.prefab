@@ -1120,7 +1120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Rotation
   axis: 0
-  speed: 300
+  speed: 7.5
 --- !u!114 &2946136033563119502
 MonoBehaviour:
   m_ObjectHideFlags: 0

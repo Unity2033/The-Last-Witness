@@ -15,6 +15,8 @@ public class Head : MonoBehaviourPunCallbacks
 
     void Update()
     {
+        rotation.MouseY = Input.GetAxisRaw("Mouse Y");
+
         rotation.RotateX(minimumAngle, maximumAngle);
     }
 }
