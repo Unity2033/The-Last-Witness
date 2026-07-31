@@ -1,0 +1,344 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-nwond" at "2026-07-28T04:10:11.2209291Z"
+Built from '6000.3/staging' branch; Version is '6000.3.15f1 (c1aa84e375f6) revision 12692100'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) Core' Language: 'ko' Physical Memory: 16317 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-07-28T04:10:11Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.3.15f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker13
+-projectPath
+C:/Users/nwond/OneDrive/바탕 화면/Pocket-Racer/Program
+-logFile
+Logs/AssetImportWorker13.log
+-srvPort
+61214
+-licensingIpc
+LicenseClient-nwond
+-job-worker-count
+5
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: C:/Users/nwond/OneDrive/바탕 화면/Pocket-Racer/Program
+C:/Users/nwond/OneDrive/바탕 화면/Pocket-Racer/Program
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [27580]  Target information:
+
+Player connection [27580]  * "[IP] 192.168.219.104 [Port] 0 [Flags] 2 [Guid] 1737924133 [EditorId] 1737924133 [Version] 1048832 [Id] WindowsEditor(7,Dinosaur) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [27580] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [27580] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 9.51 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.15f1 (c1aa84e375f6)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.15f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/nwond/OneDrive/바탕 화면/Pocket-Racer/Program/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2544)
+    Vendor:   NVIDIA
+    VRAM:     8036 MB
+    Driver:   32.0.16.1074
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.15f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.15f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56132
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004947 seconds.
+- Loaded All Assemblies, in  1.471 seconds
+Native extension for WindowsStandalone target not found
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-nwond"
+[Licensing::IpcConnector] LicenseClient-nwond channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-nwond-6000.3.15" at "2026-07-28T04:10:15.0800799Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 25596, path: "C:/Program Files/Unity/Hub/Editor/6000.3.15f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              5c36bfb96da347f4a7776d38f8d59fff
+  Correlation Id:          068ee9ad5a76ca94e523770b0f848c72
+  External correlation Id: 4600861236348837887
+  Machine Id:              vzHBHqQzprq0ab1zjqc1s15jH+s=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-nwond-6000.3.15" (connect: 0.00s, validation: 0.00s, handshake: 0.01s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-nwond-6000.3.15-notifications" at "2026-07-28T04:10:15.0973604Z"
+[Licensing::Module] Licensing Background thread has ended after 3.88s
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.908 seconds
+Domain Reload Profiling: 2362ms
+	BeginReloadAssembly (497ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (140ms)
+	RebuildNativeTypeToScriptingClass (30ms)
+	initialDomainReloadingComplete (159ms)
+	LoadAllAssembliesAndSetupDomain (628ms)
+		LoadAssemblies (484ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (619ms)
+			TypeCache.Refresh (616ms)
+				TypeCache.ScanAssembly (587ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (908ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (781ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (143ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (177ms)
+			ProcessInitializeOnLoadAttributes (338ms)
+			ProcessInitializeOnLoadMethodAttributes (115ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 14569174559127-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+- Loaded All Assemblies, in  1.474 seconds
+Refreshing native plugins compatible for Editor in 3.09 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Refreshing native plugins compatible for Editor in 3.61 ms, found 4 plugins.
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.444 seconds
+Domain Reload Profiling: 2906ms
+	BeginReloadAssembly (245ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (202ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (67ms)
+	LoadAllAssembliesAndSetupDomain (929ms)
+		LoadAssemblies (632ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (443ms)
+			TypeCache.Refresh (334ms)
+				TypeCache.ScanAssembly (307ms)
+			BuildScriptInfoCaches (89ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1445ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1198ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (178ms)
+			ProcessInitializeOnLoadAttributes (930ms)
+			ProcessInitializeOnLoadMethodAttributes (73ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 2.53 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6805 unused Assets / (4.3 MB). Loaded Objects now: 7607.
+Memory consumption went from 159.1 MB to 154.8 MB.
+Total: 9.358900 ms (FindLiveObjects: 1.101900 ms CreateObjectMapping: 0.363700 ms MarkObjects: 5.661000 ms  DeleteObjects: 2.231500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 759111.559871 seconds.
+  path: Assets/Toon Racer Starter Track Kit/Prefabs/Tracks/Track05.prefab
+  artifactKey: Guid(80270212036254f42a90b61206399e8c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Toon Racer Starter Track Kit/Prefabs/Tracks/Track05.prefab using Guid(80270212036254f42a90b61206399e8c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3ed9e4ba4599ea3b6a2ff7de889bacbb') in 0.1572126 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Toon Racer Starter Track Kit/Textures/Barrier/Barrier_Albedo.png
+  artifactKey: Guid(6af65276383e6ed448765548ac821709) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Toon Racer Starter Track Kit/Textures/Barrier/Barrier_Albedo.png using Guid(6af65276383e6ed448765548ac821709) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e6dcf56bfa237863e4b0375db5919231') in 0.0870016 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Toon Racer Starter Track Kit/Textures/Barrier/Barrier_Normal.png
+  artifactKey: Guid(6fa2c544a979785478ec1255c67a18ab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Toon Racer Starter Track Kit/Textures/Barrier/Barrier_Normal.png using Guid(6fa2c544a979785478ec1255c67a18ab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd4fec46bb0b06e207187bcc2a3b63620') in 0.0305537 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Toon Racer Starter Track Kit/Meshes
+  artifactKey: Guid(fb836c0e2c718194cbf3d815553e73dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Toon Racer Starter Track Kit/Meshes using Guid(fb836c0e2c718194cbf3d815553e73dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ce9b5c560cbe111ffac95c2a54eab168') in 0.020247 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Toon Racer Starter Track Kit/Prefabs/Car.prefab
+  artifactKey: Guid(4ae7afde5628f914dbff1cefac0e2d74) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Toon Racer Starter Track Kit/Prefabs/Car.prefab using Guid(4ae7afde5628f914dbff1cefac0e2d74) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '186dae10772bc6f1a848d29c22668346') in 0.0248429 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 36
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Toon Racer Starter Track Kit/Meshes/Car.fbx
+  artifactKey: Guid(08abe823016adfd4f9b0e33a7002f6a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Toon Racer Starter Track Kit/Meshes/Car.fbx using Guid(08abe823016adfd4f9b0e33a7002f6a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3ddd55f20200042306554238ab85b1d7') in 0.0615038 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.027239 seconds.
+  path: Assets/Toon Racer Starter Track Kit/Meshes/Track02.fbx
+  artifactKey: Guid(1d24ab9c17e70d842b325347a02013aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toon Racer Starter Track Kit/Meshes/Track02.fbx using Guid(1d24ab9c17e70d842b325347a02013aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '03e9d45a4432b475d86586a10ff2faab') in 4.8692678 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.716691 seconds.
+  path: Assets/Toon Racer Starter Track Kit/Materials/Mat_Road.mat
+  artifactKey: Guid(b0910e4ee49fd9147b89504357fe036a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toon Racer Starter Track Kit/Materials/Mat_Road.mat using Guid(b0910e4ee49fd9147b89504357fe036a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b7ecb4029dca5c20df1899daab1b03cc') in 6.5890908 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.531026 seconds.
+  path: Assets/Toon Racer Starter Track Kit/Materials/Mat_Car.mat
+  artifactKey: Guid(816a02545cf231b489f1da487305c1ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Toon Racer Starter Track Kit/Materials/Mat_Car.mat using Guid(816a02545cf231b489f1da487305c1ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '66d31cb578c73aa936566bf867e51b77') in 0.0392839 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.754661 seconds.
+  path: Assets/Toon Racer Starter Track Kit/Meshes/Track01.fbx
+  artifactKey: Guid(ff778d995e96c194b903b8a47b40bf67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toon Racer Starter Track Kit/Meshes/Track01.fbx using Guid(ff778d995e96c194b903b8a47b40bf67) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0ea4c77ab7135d1d3b93e4a78f4f7178') in 0.0817444 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.032933 seconds.
+  path: Assets/Toon Racer Starter Track Kit/Meshes/Track03.fbx
+  artifactKey: Guid(31aaceea64ba9d44881c51e286e5e6be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Toon Racer Starter Track Kit/Meshes/Track03.fbx using Guid(31aaceea64ba9d44881c51e286e5e6be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6d2d0e360509034de90860115d3ed35d') in 0.0495882 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 65.109054 seconds.
+  path: Assets/Toon Racer Starter Track Kit/Prefabs/Tracks/Track04.prefab
+  artifactKey: Guid(8d541105556edd143a5620ecab0d2219) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Toon Racer Starter Track Kit/Prefabs/Tracks/Track04.prefab using Guid(8d541105556edd143a5620ecab0d2219) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3b44d6e107e1fb91880ab3efbfbfc06b') in 0.1610628 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 37
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.977329 seconds.
+  path: Assets/Toon Racer Starter Track Kit/Materials/Mat_Ground.mat
+  artifactKey: Guid(811dbc42f13e5ea47b0156d108a9a653) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Toon Racer Starter Track Kit/Materials/Mat_Ground.mat using Guid(811dbc42f13e5ea47b0156d108a9a653) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cd3e0418aa4dd60691d5fdab76b8a644') in 0.0228009 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.290585 seconds.
+  path: Assets/Free LowPoly Pack/Meshes/CornerWindowA_mesh.fbx
+  artifactKey: Guid(a9dd38c484b428f449090e885042f887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free LowPoly Pack/Meshes/CornerWindowA_mesh.fbx using Guid(a9dd38c484b428f449090e885042f887) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b0004c55f938cb8b66db5492a84dc716') in 4.2617834 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -1,89 +1,89 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\",
+  "WorkspaceRootPath": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\assets\\scripts\\user interfaces\\roomstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\user interfaces\\roomstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\assets\\scripts\\managers\\mastermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\mastermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\assets\\scripts\\character\\head.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\head.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\assets\\scripts\\character\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\assets\\scripts\\system\\rotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\system\\rotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\assets\\scripts\\user interfaces\\roompanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\user interfaces\\roompanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\assets\\scripts\\managers\\roommanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\roommanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2D13DB0-7D00-21F6-7ABC-3313D9DE9BA6}|PhotonRealtime.csproj|C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\assets\\photon\\photonrealtime\\code\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2D13DB0-7D00-21F6-7ABC-3313D9DE9BA6}|PhotonRealtime.csproj|C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\assets\\photon\\photonrealtime\\code\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2D13DB0-7D00-21F6-7ABC-3313D9DE9BA6}|PhotonRealtime.csproj|solutionrelative:assets\\photon\\photonrealtime\\code\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|c:\\users\\administrator\\desktop\\game-server\\program\\assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|c:\\users\\nwond\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\pocket-racer\\program\\assets\\scripts\\managers\\roommanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\roommanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\assets\\scripts\\user interfaces\\roomstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\user interfaces\\roomstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\assets\\scripts\\managers\\mastermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\mastermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\assets\\scripts\\character\\head.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\head.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\assets\\scripts\\character\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\assets\\scripts\\system\\rotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\system\\rotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\assets\\scripts\\user interfaces\\roompanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\user interfaces\\roompanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\assets\\scripts\\managers\\panelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\assets\\scripts\\managers\\panelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\panelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\assets\\scripts\\data\\panel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\assets\\scripts\\data\\panel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\panel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\assets\\scripts\\data\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\assets\\scripts\\data\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\assets\\scripts\\managers\\mousemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\assets\\scripts\\managers\\mousemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\mousemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\assets\\scripts\\user interfaces\\pausepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\assets\\scripts\\user interfaces\\pausepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\user interfaces\\pausepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\assets\\scripts\\user interfaces\\errorpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\assets\\scripts\\user interfaces\\errorpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\user interfaces\\errorpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\assets\\scripts\\managers\\dialogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\assets\\scripts\\managers\\dialogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\dialogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E36DBBA-8631-C00E-1392-B86B2398B8D4}|PhotonUnityNetworking.csproj|C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\assets\\photon\\photonunitynetworking\\code\\punclasses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9E36DBBA-8631-C00E-1392-B86B2398B8D4}|PhotonUnityNetworking.csproj|C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\assets\\photon\\photonunitynetworking\\code\\punclasses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E36DBBA-8631-C00E-1392-B86B2398B8D4}|PhotonUnityNetworking.csproj|solutionrelative:assets\\photon\\photonunitynetworking\\code\\punclasses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\assets\\scripts\\managers\\networkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\assets\\scripts\\managers\\networkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\networkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\assets\\scripts\\managers\\playfabmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\assets\\scripts\\managers\\playfabmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\playfabmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\assets\\scripts\\user interfaces\\subscribepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\assets\\scripts\\user interfaces\\subscribepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\user interfaces\\subscribepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\assets\\scripts\\core\\singleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\assets\\scripts\\core\\singleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62F3AAF5-E66B-9AA0-1FC4-8CF8BF707240}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\singleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -94,32 +94,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Character.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Character\\Character.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Character.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Character\\Character.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Character\\Character.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAA1wHwAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "RoomManager.cs",
+              "DocumentMoniker": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Managers\\RoomManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\RoomManager.cs",
+              "ToolTip": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Managers\\RoomManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Managers\\RoomManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-26T11:40:19.861Z",
+              "WhenOpened": "2026-06-19T12:08:32.281Z",
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
+              "Title": "Character.cs",
+              "DocumentMoniker": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Character\\Character.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Character.cs",
+              "ToolTip": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Character\\Character.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Character\\Character.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAA1wHwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T11:40:19.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Room.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Photon\\PhotonRealtime\\Code\\Room.cs",
+              "DocumentMoniker": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Photon\\PhotonRealtime\\Code\\Room.cs",
               "RelativeDocumentMoniker": "Assets\\Photon\\PhotonRealtime\\Code\\Room.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Photon\\PhotonRealtime\\Code\\Room.cs",
+              "ToolTip": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Photon\\PhotonRealtime\\Code\\Room.cs",
               "RelativeToolTip": "Assets\\Photon\\PhotonRealtime\\Code\\Room.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -128,37 +140,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RoomManager.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Managers\\RoomManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\RoomManager.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Managers\\RoomManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Managers\\RoomManager.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAvwAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-19T12:08:32.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "RoomPanel.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\User Interfaces\\RoomPanel.cs",
+              "DocumentMoniker": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\User Interfaces\\RoomPanel.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\User Interfaces\\RoomPanel.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\User Interfaces\\RoomPanel.cs",
+              "ToolTip": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\User Interfaces\\RoomPanel.cs",
               "RelativeToolTip": "Assets\\Scripts\\User Interfaces\\RoomPanel.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAIwBsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-19T12:30:41.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-19T12:30:41.729Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "Panel.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Data\\Panel.cs",
+              "DocumentMoniker": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Data\\Panel.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\Panel.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Data\\Panel.cs",
+              "ToolTip": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Data\\Panel.cs",
               "RelativeToolTip": "Assets\\Scripts\\Data\\Panel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -168,9 +166,9 @@
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "ErrorPanel.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\User Interfaces\\ErrorPanel.cs",
+              "DocumentMoniker": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\User Interfaces\\ErrorPanel.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\User Interfaces\\ErrorPanel.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\User Interfaces\\ErrorPanel.cs",
+              "ToolTip": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\User Interfaces\\ErrorPanel.cs",
               "RelativeToolTip": "Assets\\Scripts\\User Interfaces\\ErrorPanel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -180,9 +178,9 @@
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "PausePanel.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\User Interfaces\\PausePanel.cs",
+              "DocumentMoniker": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\User Interfaces\\PausePanel.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\User Interfaces\\PausePanel.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\User Interfaces\\PausePanel.cs",
+              "ToolTip": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\User Interfaces\\PausePanel.cs",
               "RelativeToolTip": "Assets\\Scripts\\User Interfaces\\PausePanel.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAA7wBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -192,9 +190,9 @@
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "MouseManager.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Managers\\MouseManager.cs",
+              "DocumentMoniker": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Managers\\MouseManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\MouseManager.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Managers\\MouseManager.cs",
+              "ToolTip": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Managers\\MouseManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Managers\\MouseManager.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAYwBAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -202,63 +200,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MasterManager.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Managers\\MasterManager.cs",
+              "DocumentMoniker": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Managers\\MasterManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\MasterManager.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Managers\\MasterManager.cs",
+              "ToolTip": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Managers\\MasterManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Managers\\MasterManager.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAA1wBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T11:07:36.421Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-01T11:07:36.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Rotation.cs",
+              "DocumentMoniker": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\System\\Rotation.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\System\\Rotation.cs",
+              "ToolTip": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\System\\Rotation.cs",
+              "RelativeToolTip": "Assets\\Scripts\\System\\Rotation.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA1wBMAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-29T11:44:43.964Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Rotation.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\System\\Rotation.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\System\\Rotation.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\System\\Rotation.cs",
-              "RelativeToolTip": "Assets\\Scripts\\System\\Rotation.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAA1wBMAAAAHAAAAAAAAAA==",
+              "Title": "Head.cs",
+              "DocumentMoniker": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Character\\Head.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Head.cs",
+              "ToolTip": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Character\\Head.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Character\\Head.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAywBEAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-29T11:44:43.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-29T12:28:43.364Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Head.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Character\\Head.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Head.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Character\\Head.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Character\\Head.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAywBEAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-29T12:28:43.364Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "RoomStatus.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\User Interfaces\\RoomStatus.cs",
+              "DocumentMoniker": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\User Interfaces\\RoomStatus.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\User Interfaces\\RoomStatus.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\User Interfaces\\RoomStatus.cs",
+              "ToolTip": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\User Interfaces\\RoomStatus.cs",
               "RelativeToolTip": "Assets\\Scripts\\User Interfaces\\RoomStatus.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAABSwAoAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-24T12:13:25.224Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-24T12:13:25.224Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "Data.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Data\\Data.cs",
+              "DocumentMoniker": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Data\\Data.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\Data.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Data\\Data.cs",
+              "ToolTip": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Data\\Data.cs",
               "RelativeToolTip": "Assets\\Scripts\\Data\\Data.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -268,9 +262,9 @@
               "$type": "Document",
               "DocumentIndex": 17,
               "Title": "NetworkManager.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Managers\\NetworkManager.cs",
+              "DocumentMoniker": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Managers\\NetworkManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\NetworkManager.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Managers\\NetworkManager.cs",
+              "ToolTip": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Managers\\NetworkManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Managers\\NetworkManager.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -280,22 +274,21 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Managers\\GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Managers\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\GameManager.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Managers\\GameManager.cs",
+              "ToolTip": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Managers\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Managers\\GameManager.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAYwAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-06T11:40:31.843Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-06T11:40:31.843Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "PanelManager.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Managers\\PanelManager.cs",
+              "DocumentMoniker": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Managers\\PanelManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\PanelManager.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Managers\\PanelManager.cs",
+              "ToolTip": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Managers\\PanelManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Managers\\PanelManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -305,9 +298,9 @@
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "DialogManager.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Managers\\DialogManager.cs",
+              "DocumentMoniker": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Managers\\DialogManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\DialogManager.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Managers\\DialogManager.cs",
+              "ToolTip": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Managers\\DialogManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Managers\\DialogManager.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAAwDQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -317,9 +310,9 @@
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "PunClasses.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Photon\\PhotonUnityNetworking\\Code\\PunClasses.cs",
+              "DocumentMoniker": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Photon\\PhotonUnityNetworking\\Code\\PunClasses.cs",
               "RelativeDocumentMoniker": "Assets\\Photon\\PhotonUnityNetworking\\Code\\PunClasses.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Photon\\PhotonUnityNetworking\\Code\\PunClasses.cs",
+              "ToolTip": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Photon\\PhotonUnityNetworking\\Code\\PunClasses.cs",
               "RelativeToolTip": "Assets\\Photon\\PhotonUnityNetworking\\Code\\PunClasses.cs",
               "ViewState": "AgIAAEQCAAAAAAAAAAAiwFICAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -329,9 +322,9 @@
               "$type": "Document",
               "DocumentIndex": 19,
               "Title": "SubscribePanel.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\User Interfaces\\SubscribePanel.cs",
+              "DocumentMoniker": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\User Interfaces\\SubscribePanel.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\User Interfaces\\SubscribePanel.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\User Interfaces\\SubscribePanel.cs",
+              "ToolTip": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\User Interfaces\\SubscribePanel.cs",
               "RelativeToolTip": "Assets\\Scripts\\User Interfaces\\SubscribePanel.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAkwCIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -341,9 +334,9 @@
               "$type": "Document",
               "DocumentIndex": 20,
               "Title": "Singleton.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Core\\Singleton.cs",
+              "DocumentMoniker": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Core\\Singleton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\Singleton.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Core\\Singleton.cs",
+              "ToolTip": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Core\\Singleton.cs",
               "RelativeToolTip": "Assets\\Scripts\\Core\\Singleton.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAYwBYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -353,9 +346,9 @@
               "$type": "Document",
               "DocumentIndex": 18,
               "Title": "PlayfabManager.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Managers\\PlayfabManager.cs",
+              "DocumentMoniker": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Managers\\PlayfabManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\PlayfabManager.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Server\\Program\\Assets\\Scripts\\Managers\\PlayfabManager.cs",
+              "ToolTip": "C:\\Users\\nwond\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Pocket-Racer\\Program\\Assets\\Scripts\\Managers\\PlayfabManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Managers\\PlayfabManager.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAtwBEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
